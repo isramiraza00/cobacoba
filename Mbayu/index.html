@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	
+</head>
+<body>
+	<div class="wrapper" id='app'>
+		<header-wrapp></header-wrapp>
+		<welcome-page></welcome-page>
+		<div class="page dua" id="data_anak">
+			<h3>Data Anak</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="data">
+				<div class="dataAnak setWrapp">
+					<span>Data Anak</span>
+					<div class="total">
+						<canvas id="myChart"></canvas>
+					</div>
+					<div class="stanting box">
+						<div class="title">
+							<div class="nama-g">
+								<p>Stanting</p>
+								<p>12201</p>
+							</div>			
+							<div style="width:100px;">
+								<canvas id="myChartS"></canvas>
+							</div>
+						</div>
+					</div>
+					<div class="kurang-gizi box">
+						<div class="title">
+							<div class="nama-g">
+								<p>Kurang Gizi</p>
+								<p>12201</p>
+							</div>			
+							<div style="width:100px;">
+								<canvas id="myChartKg"></canvas>
+							</div>
+						</div>
+					</div>
+					<div class="normal box">
+						<div class="title">
+							<div class="nama-g">
+								<p>Normal</p>
+								<p>12201</p>
+							</div>			
+							<div style="width:100px;">
+								<canvas id="myChartNormal"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grafikAnak setWrapp">
+					<span>Grafik Anak yang setelah diimunisasi 2022</span>
+					<p style="font-weight: bold;font-size: 1.5em;">12201</p>
+					<div class="grafik-box">
+						<canvas id="myChartImun"></canvas>
+					</div>
+				</div>
+				<div class="persentase setWrapp">
+					<span>Persentase imunisasi wajib</span>
+					<div class="persentase-box">
+						<div class="l-Chart">
+							<p>Hepatitis B</p>
+				  			<canvas id="myChart0"></canvas>
+						</div>
+						<div class="garis"></div>
+						<div class="l-Chart">
+							<p>Polio</p>
+						  	<canvas id="myChart1"></canvas>
+						</div>
+						<div class="garis"></div>
+						<div class="l-Chart">
+							<p>BCG</p>
+				  			<canvas id="myChart2"></canvas>
+						</div>
+						<div class="garis"></div>
+						<div class="l-Chart">
+							<p>Campak Rubella</p>
+				  			<canvas id="myChart3"></canvas>
+						</div>
+						<div class="garis"></div>
+						<div class="l-Chart">
+							<p>DPT-HB-HiB</p>
+				  			<canvas id="myChart4"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<lokasi></lokasi>
+		<tentang></tentang>
+		<footer-wrapp></footer-wrapp>
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="assets/js/script.js"></script>
+<!-- <script src="assets/js/menu-toogle.js"></script> -->
+<script src="assets/js/component.js"></script>
+</body>
+</html>
